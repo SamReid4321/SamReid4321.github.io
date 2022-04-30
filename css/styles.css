@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Tapestry&display=swap');
+body{
+    display: grid;
+    grid-template-rows: 200px auto auto;
+}
+
+header {
+    background: linear-gradient(100deg, #00f7ff 0%, #79CC80 100%);
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-family: 'EB Garamond', serif;
+    font-size: 2em;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.navbar {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-around;
+}
+.logo {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #79CC80;
+    border-radius: 25px;
+    height: 50px;
+    box-shadow: 4px 4px #4f8b54;
+    transition: 200ms;
+}
+.button:hover {
+    background-color: #37DA45;
+    box-shadow: 4px 4px #089e14;
+}
+.button:focus {
+    background-color: #37DA45;
+    box-shadow: 4px 4px #089e14;
+}
+.navlink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #79CC80;
+    border-radius: 25px;
+    width: 75%;
+    max-width: 200px;
+    margin-left: 25px;
+    flex-wrap: nowrap;
+}
+.buttonlink {
+    display: block;
+    padding: 15px;
+}
+.fish {
+    width: 50%;
+    max-width: 200px;
+}
+.main {
+    grid-row: 2;
+    background-color: #DFFFFF;
+    font-family: 'Tapestry', cursive;
+}
+.blurb {
+    width: 80%;
+    background: linear-gradient( #00f7ff 0% 80%, #00c8cf 100%);
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-style: double;
+    font-size: 3vw;
+}
+.collage {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    width: auto;
+    margin: auto;
+}
+.collageimg {
+    object-fit: contain;
+    max-width: 25%;
+}
+footer {
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background: linear-gradient( #00f7ff 0%, #00c8cf 100%);
+    font-family: 'EB Garamond', serif;
+}
+.contact {
+    grid-column: 1;
+    text-align: center;
+}
+.credits {
+    grid-column: 2;
+}
+.hours {
+    text-align: center;
+}
+
+.submit { 
+    background-color: #79CC80;
+    border-radius: 25px;
+    width: 25%;
+    height: 50px;
+    text-shadow: 3px;
+    box-shadow: 4px 4px #4f8b54;
+    transition: 200ms;
+    display: block;
+    margin: auto;
+}
+.submit:hover {
+    background-color: #37DA45;
+    box-shadow: 4px 4px #089e14;
+}
+.submit:focus {
+    background-color: #37DA45;
+    box-shadow: 4px 4px #089e14;
+}
+
+.content {
+    height: 100px;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+.menu {
+    display: grid;
+}
+.menunavbar {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.menuitem {
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.menuimg {
+    object-fit: contain;
+    max-width: 90%;
+    max-height: 300px;
+}
+p:nth-child(2) {
+    margin: auto;
+}
+p:nth-child(3) {
+    margin: auto;
+}
+
+.sticky {
+    position: sticky;
+    top: 10px;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    header{
+        font-size: 20px;
+    }
+    .menuitem {
+        font-size: 20px;
+    }
+    .blurb {
+        font-size: 20px;
+    }
+
+}
+@media only screen and (min-width: 600px) {
+    .navbar {
+        grid-column: 1;
+        display: flex;
+        flex-direction: row;
+        height: 200px;
+        justify-content: space-around;
+    }
+
+}
